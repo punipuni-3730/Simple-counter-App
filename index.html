@@ -2,9 +2,9 @@
 <header>
     <title>シンプルカウンター</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="description" content="シンプルな数を数えるカウンター">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </header>
 <body>
     <div class="title">
@@ -17,13 +17,14 @@
     </div>
     <div class="main">
         <div class="result" id="result">
-            <h1>0000回</h1>
+            <h1>0回</h1>
         </div>
         <div class="control">
             <button type="button" class="count-btn" onclick="funccount()">COUNT</button>
             <div class="control-sub">
                 <button type="button" class="btn" onclick="funcreturn()">RETURN</button>
-                <button type="button" class="btn" onclick="funcreset()">RESET</button>
+                <button type="button" class="reset-btn" onclick="funcreset()">RESET</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>

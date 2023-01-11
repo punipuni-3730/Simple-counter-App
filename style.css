@@ -6,6 +6,7 @@ body {
     font-size: 24px;
     line-height: 1.5em;
     color: black;
+    margin: 0;
 }
 
 .title{
@@ -14,6 +15,7 @@ body {
     background-color: #3E50B4;
 }
 .action_box img{
+    display: none; /*今はアクションボタンを使わないので非表示化*/
     height:50px;
     margin:10px;
 }
@@ -27,7 +29,48 @@ body {
 .result{
     text-align: center;
     margin:20px;
+    font-size: 50px;
+}
+.main{
+    margin: 20px;
 }
 .control{
+    text-align: center;
+}
+.count-btn{
+    width: 80%;
+    aspect-ratio: 6 / 2;
+    font-size: 30px;
+    background-color: #313131;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.control-sub{
+    display: flex;
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.btn{
+    margin: 0px;
+    width: 50%;
+    aspect-ratio: 5 / 2;
+    font-size: 20px;
+    background-color: skyblue;
+    color: #313131;
+    border-radius: 10px;
+    text-align: center;
+}
+.reset-btn{
+    margin: 0px;
+    width: 30%;
+    aspect-ratio: 3 / 2;
+    font-size: 20px;
+    background-color: rgb(255, 188, 2);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
     text-align: center;
 }

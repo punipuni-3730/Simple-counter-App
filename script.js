@@ -1,10 +1,26 @@
-var count = 2828;
-var count = localStorage.getItem('Count');
-let Result = document.getElementById("result");
-result.innerHTML = parseInt(count);
+if(localStorage.getItem('count') == null) {
+    localStorage.setItem("count","0");
+}
+num = parseInt(localStorage.count)
+result.innerHTML = `<h1>${num}回</h1>`
 
-function funccount(){
-    var count = count + 1;
-    var count = localStorage.saveItem('Count');
-    Result.innerHTML = ('beforeend',`<h1>${count}回</h1>`)
+
+function funccount() {
+    num = parseInt(localStorage.count)
+    localStorage.count = (num + 1);
+    result.innerHTML = `<h1>${localStorage.count}回</h1>`
+}
+
+function funcreturn() {
+    num = parseInt(localStorage.count)
+    if(num > 0) 
+        { 
+            localStorage.count = (num - 1);
+            result.innerHTML = `<h1>${localStorage.count}回</h1>`;
+        }
+    else{;}
+}
+function funcreset() {
+    localStorage.setItem("count","0")
+    result.innerHTML = `<h1>${localStorage.count}回</h1>`
 }
