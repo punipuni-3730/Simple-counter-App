@@ -39,11 +39,11 @@ body {
 }
 .count-btn{
     width: 80%;
-    aspect-ratio: 6 / 2;
+    height:500px;
     font-size: 30px;
     background-color: #313131;
     color: white;
-    border-radius: 10px;
+    border-radius: 10px; 
     margin-bottom: 10px;
 }
 .control-sub{
